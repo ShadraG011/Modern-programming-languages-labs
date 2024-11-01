@@ -4,13 +4,13 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class PythonCodeGenerator {
     private static final Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
 
 
-        Main main = new Main();
+        PythonCodeGenerator pythonCodeGenerator = new PythonCodeGenerator();
         System.out.print("""
                 1. Создать матрицу размером n*m, заполненную случайными числами от k до z
                 2. Транспонировать матрицу: [[a11, ... , a1j], [a21, ... , a2j], ... [aij, ... , aij]]
@@ -18,7 +18,7 @@ public class Main {
                                 
                 Напишите один из предложеных шаблонов, по которому необходимо создать код: """);
         String pattern = sc.nextLine();
-        System.out.println("\nКод на Python:\n" + main.generateCodeForPython(pattern));
+        System.out.println("\nКод на Python:\n" + pythonCodeGenerator.generateCodeForPython(pattern));
 
     }
 

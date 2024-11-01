@@ -23,12 +23,12 @@ public class Main {
         System.out.print("Введите абсолютный путь до папки в которой будут содержаться файлы в формате \"ПУТЬ/ДО/ПАПКИ\": ");
         path = sc.nextLine();
         Main main = new Main();
-
-        try {
-            main.createFiles(path);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+//
+//        try {
+//            main.createFiles(path);
+//        } catch (IOException e) {
+//            throw new RuntimeException(e);
+//        }
 
         long startTime = System.currentTimeMillis();
 
@@ -129,8 +129,8 @@ public class Main {
             e.printStackTrace();
         }
 
-        long endTime = System.currentTimeMillis(); // Запоминаем конечное время
-        long duration = (endTime - startTime) / 1000; // Рассчитываем продолжительность
+        long endTime = System.currentTimeMillis();
+        long duration = (endTime - startTime) / 1000;
 
         System.out.println("-------------------------------------------------");
         System.out.println("Расчеты общих медиан и средних отклонений: ");
